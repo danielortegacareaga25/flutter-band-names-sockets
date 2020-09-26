@@ -183,6 +183,7 @@ class _HomePageState extends State<HomePage> {
       dataMap.putIfAbsent(band.name, () => band.votes.toDouble());
     });
     return Container(
+        padding: EdgeInsets.only(top: 15),
         width: double.infinity,
         height: 200,
         child: PieChart(
