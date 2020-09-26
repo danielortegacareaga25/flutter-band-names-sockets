@@ -58,9 +58,6 @@ class _HomePageState extends State<HomePage> {
         children: [
           _showGraph(),
           Divider(),
-          Container(
-            height: 10,
-          ),
           Expanded(
             child: ListView.builder(
                 itemCount: bands.length,
@@ -76,6 +73,7 @@ class _HomePageState extends State<HomePage> {
           addNexBand();
         },
       ),
+      resizeToAvoidBottomInset: false,
     );
   }
 
